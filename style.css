@@ -6,6 +6,10 @@
     font-family: Comfortaa, sans-serif;
 }
 
+:root {
+    --sidebar-top-margin: 50px;
+}
+
 a {
     text-decoration: none;
 }
@@ -20,17 +24,24 @@ a {
     grid-row: 1 / -1;
 }
 
-.sidebar ul {
-    list-style: none;
-    display: grid;
+.main-links {
     grid-template: repeat(6, 1fr);
-    gap: 20px;
-    padding: 10px 40px;
-    
 }
 
-.sidebar .dashboard {
-    padding: 20px;
+.secondary-links {
+    grid-template: repeat(3, 1fr);
+}
+
+.sidebar .sidebar-items {
+    list-style: none;
+    display: grid;
+    gap: 20px;
+    padding: 0 40px;
+    margin-top: var(--sidebar-top-margin);
+}
+
+.sidebar .logo {
+    padding: 20px 20px 0 20px;
 }
 
 
