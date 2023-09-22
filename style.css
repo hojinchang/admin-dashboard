@@ -223,9 +223,13 @@ a {
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
     position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-.project-tile ::before {
+.project-tile::before {
     position: absolute;
     content: "";
     top: 0;
@@ -241,6 +245,19 @@ a {
     width: 100%;
 }
 
+.project-tile > h4 {
+    font-size: 1.2rem;
+}
+
+.reference {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.reference > a >  img {
+    width: 35px;
+}
 
 
 
@@ -255,7 +272,7 @@ a {
     grid-row: 2 / 3;
 }
 
-.footer {
+/* .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -267,4 +284,4 @@ a {
 
 .footer > p > a {
     color: var(--green-1);
-}
+} */
