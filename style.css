@@ -13,6 +13,7 @@
     --green-4: #F7FFE5;
     --white: white;
     --icon-text-gap: 0.75rem;
+    --box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 a {
@@ -84,8 +85,9 @@ a {
     grid-row: 1 / 2;
     display: grid;
     grid-template: 1fr 1fr / 2fr 1fr;
-    padding: 1.5rem 2.5rem;
+    padding: 1.5rem 2.5rem 0.75rem;
     gap: 20px;
+    background-color: var(--green-4);
 }
 
 .header .search-bar {
@@ -165,7 +167,7 @@ a {
     border: 0;
     background-color: var(--green-1);
     color: var(--white);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--box-shadow);
 }
 
 .function-buttons > button:hover {
@@ -178,15 +180,13 @@ a {
 }
 
 
-
-
-
 .main-content {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 
     display: grid;
     grid-template: 1fr 1fr / 4fr 1fr;
+    background-color: var(--green-3);
 }
 
 .projects {
