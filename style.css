@@ -124,6 +124,10 @@ a {
     gap: var(--icon-text-gap);
 }
 
+.user-links > h3 > a {
+    color: var(--green-1)
+}
+
 
 .user-icon {
     width: 3.25rem;
@@ -211,4 +215,8 @@ a {
 
     display: flex;
     justify-content: center;
+}
+
+.footer > p > a {
+    color: var(--green-1);
 }
