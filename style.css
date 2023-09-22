@@ -101,7 +101,7 @@ a {
 
 .search-bar #search_bar {
     border-radius: 3rem;
-    width: 45rem;
+    width: clamp(100px, 70%, 1000px);
     height: 2.25rem;
 }
 
@@ -192,9 +192,21 @@ a {
     background-color: var(--green-3);
 }
 
-.projects {
+.projects  {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+}
+
+.projects .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+
+.projects-header {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    height: auto;
 }
 
 .announcements {
