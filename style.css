@@ -172,7 +172,6 @@ a {
 
 .function-buttons > button:hover {
     background-color: var(--green-2);
-    cursor: pointer;
 }
 
 .function-buttons > button:active {
