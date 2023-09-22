@@ -4,10 +4,40 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" defer>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
         <title>Admin</title>
     </head>
     <body>
         <div class="grid-container">
+            <header class="header">
+                <div class="search-bar">
+                    <img class="header-icon" src="./media/images/header/magnify.svg" alt="search">
+                    <input type="search" id="search_bar" name="user_search">
+                </div>
+                <div class="account">
+                    <img class="header-icon" src="./media/images/header/bell-ring-outline.svg" alt="github-icon">
+                    <div class="user-links">
+                        <img class="user-icon" src="./media/images/header/github.svg" alt="search">
+                        <h3><a href="https://github.com/hojinchang" target="_blank" rel="noopener noreferrer">Ho Jin Chang</a></h3>
+                    </div>
+                </div>
+                <div class="profile">
+                    <img class="greetings-icon" src="./media/images/header/github.svg" alt="github-icon">
+                    <div class="user-greeting">
+                        <p>Hi there,</p>
+                        <h2>Ho Jin Chang</h2>
+                    </div>
+                </div>
+                <div class="function-buttons">
+                    <button type="button">New</button>
+                    <button type="button">Upload</button>
+                    <button type="button">Share</button>
+                </div>
+               
+            </header>
+
             <div class="sidebar">
                 <div class="logo">
                     <img class="dashboard-icon" src="./media/images/sidebar/view-dashboard.svg" alt="dashboard">
@@ -55,7 +85,6 @@
                 </ul>
             </div>
 
-            <header class="header">Header</header>
 
             <div class="main-content">
                 <div class="projects">Projects</div>
