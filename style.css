@@ -16,6 +16,7 @@
     --box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     --main-content-header: 1.3rem;
     --card-border-radius: 0.7rem;
+    --dist-between-items: 1.5rem;
 }
 
 a {
@@ -192,8 +193,8 @@ a {
     display: grid;
     grid-template: 1fr 1fr / 4fr 1fr;
     background-color: var(--green-3);
-    padding: 2rem 1.5rem;
-    gap: 1rem;
+    padding: 2rem var(--dist-between-items);
+    gap: var(--dist-between-items);
 }
 
 .projects  {
@@ -204,7 +205,7 @@ a {
 .projects .project-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.6rem;
+    gap: var(--dist-between-items);
 }
 
 .projects-header {
@@ -218,14 +219,18 @@ a {
 }
 
 .project-tile {
-    background-color: var(--green-4);
-    border-radius: var(--card-border-radius);
-    box-shadow: var(--box-shadow);
     position: relative;
     display: flex;
     flex-direction: column;
-    padding:  1rem 2rem;
     gap: 0.5rem;
+}
+
+.project-tile,
+.progress-card {
+    background-color: var(--green-4);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    padding:  1rem 2rem;
 }
 
 .project-tile::before {
@@ -251,7 +256,8 @@ a {
 }
 
 .project-tile > h4 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    color: var(--green-1);
 }
 
 .reference {
@@ -264,6 +270,17 @@ a {
     width: 35px;
 }
 
+.progress-card > h4 {
+    font-size: 0.9rem;
+    color: var(--green-1);
+}
+
+.progress-card > p {
+    font-size: 0.83rem;
+    padding-bottom: 0.8rem;
+    margin: 0.3rem 0 0.8rem;
+    border-bottom: 1px solid;
+}
 
 
 
