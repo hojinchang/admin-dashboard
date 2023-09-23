@@ -202,7 +202,7 @@ a {
 
 .projects .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.6rem;
 }
 
@@ -219,13 +219,12 @@ a {
 
 .project-tile {
     background-color: var(--green-4);
-    padding: 2rem;
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
     position: relative;
-
     display: flex;
     flex-direction: column;
+    padding:  1rem 2rem;
     gap: 0.5rem;
 }
 
@@ -241,8 +240,14 @@ a {
     border-bottom-left-radius: var(--card-border-radius);
 }
 
+.project-tile > p {
+    flex: 1;
+}
+
 .project-tile > img {
+    height: auto;
     width: 100%;
+    object-fit: cover;;
 }
 
 .project-tile > h4 {
