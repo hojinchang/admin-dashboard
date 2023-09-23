@@ -23,7 +23,9 @@ a {
     text-decoration: none;
 }
 
-
+ul {
+    list-style: none;
+}
 
 .grid-container {
     display: grid;
@@ -49,7 +51,6 @@ a {
 }
 
 .sidebar .sidebar-items {
-    list-style: none;
     margin-top: var(--sidebar-top-margin);
 }
 
@@ -226,7 +227,8 @@ a {
 }
 
 .project-tile,
-.progress-card {
+.progress-card, 
+.favourites-card {
     background-color: var(--green-4);
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
@@ -270,6 +272,11 @@ a {
     width: 35px;
 }
 
+.progress {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
 .progress-card > h4 {
     font-size: 0.9rem;
     color: var(--green-1);
@@ -288,14 +295,33 @@ a {
     margin: 0;
 }
 
-.announcements {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-}
-
-.tending {
+.favourites {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+}
+
+.favourites-card {
+    gap: 1rem;
+}
+
+.favourites-card > li {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 0.5rem;
+}
+
+.favourites-card > li > img {
+    width: 3rem;
+}
+
+.favourites-card .favourites-profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.favourites-profile a {
+    color: var(--green-1);
 }
 
 /* .footer {
