@@ -282,7 +282,11 @@ a {
     border-bottom: 1px solid;
 }
 
-
+.progress-card > p:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+    margin: 0;
+}
 
 .announcements {
     grid-column: 2 / 3;
