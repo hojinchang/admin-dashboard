@@ -323,17 +323,3 @@ ul {
 .favourites-profile a {
     color: var(--green-1);
 }
-
-/* .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-
-    display: flex;
-    justify-content: center;
-}
-
-.footer > p > a {
-    color: var(--green-1);
-} */
