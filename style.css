@@ -30,6 +30,7 @@ ul {
 .grid-container {
     display: grid;
     grid-template: 200px 1fr / 300px 1fr;
+    height: 100vh;
 }
 
 /* Sidebar */
@@ -194,8 +195,6 @@ ul {
     background-color: var(--green-3);
     padding: 2rem var(--dist-between-items);
     gap: var(--dist-between-items);
-
-    /* max-height: 100vh; */
     overflow: auto;
 }
 
